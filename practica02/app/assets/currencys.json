@@ -1,0 +1,70 @@
+[
+  {
+    "id": "1",
+    "symbol": "EUR"
+  },
+  {
+    "id": "2",
+    "symbol": "USD"
+  },
+  {
+    "id": "3",
+    "symbol": "JPY"
+  },
+  {
+    "id": "4",
+    "symbol": "DKK"
+  },
+  {
+    "id": "5",
+    "symbol": "GBP"
+  },
+  {
+    "id": "6",
+    "symbol": "SEK"
+  },
+  {
+    "id": "7",
+    "symbol": "CHF"
+  },
+  {
+    "id": "8",
+    "symbol": "NOK"
+  },
+  {
+    "id": "9",
+    "symbol": "RUB"
+  },
+  {
+    "id": "10",
+    "symbol": "TRY"
+  },
+  {
+    "id": "11",
+    "symbol": "AUD"
+  },
+  {
+    "id": "12",
+    "symbol": "BRL"
+  },
+  {
+    "id": "13",
+    "symbol": "CAD"
+  },
+  {
+    "id": "14",
+    "symbol": "CNY"
+  },
+  {
+    "id": "15",
+    "symbol": "INR"
+  },
+  {
+    "id": "16",
+    "symbol": "MXN"
+  },
+  {
+    "id": "17",
+    "symbol": "ZAR"
+  }
+]

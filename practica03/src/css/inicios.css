@@ -1,0 +1,318 @@
+/* ##### VARIABLES ##### */
+:root {
+    --backgroundColor: #333;
+    --backgroundSelectFilter: #8991fa;
+    --backgroundSelectFilterHover: #a0a8ff;
+    --backgroundSelectFileterActive: #b2b8ff;
+    --backgroundAddTask: #4caf50;
+    --backgroundAddTaskHover: #66bb6a;
+    --backgroundAddTaskActive: #8fcf92;
+    --backgroundCancelTask: #ff5757;
+    --backgroundCancelTaskHover: #ff7f7f;
+    --backgroundCancelTaskActive: #f79191;
+    --backgroundTaskContainerColor: #bdbdbd;
+    --backgroundCamposContainerColor: var(--backgroundTaskContainerColor);
+    --titleColor: #fff;
+    --textButtonColor: var(--backgroundColor);
+    --buttonTextSize: 2.5em;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+header, .main-index, .see-task, .main-edit-task, .add-task-buttons, .index-buttons, .edit-task-buttons {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+header, .add-task-buttons, .index-buttons, .edit-task-buttons {
+    position: sticky;
+    width: 100vw;
+    height: 10vh;
+    overflow: hidden;
+    background-color: var(--backgroundColor);
+    text-align: center;
+    color: var(--titleColor);
+}
+
+header > h1 {
+    margin: 2%;
+    user-select: none;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    background-color: var(--backgroundColor);
+    color: var(--titleColor);
+}
+
+
+.main-index, .see-task, .filtros {
+    align-self: center;
+    height: 90vh;
+    overflow-y: auto;
+    margin: 0;
+}
+
+.main-edit-task {
+    align-self: center;
+    height: 90vh;
+    overflow-y: hidden;
+    margin: 0;
+}
+
+.task-list, .task {
+    margin-bottom: 11vh;
+}
+
+.task-list > input {
+    margin: 1vh 1vw 0 2vw;
+}
+
+.task-list > ul > li > button{
+    width: 90%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--backgroundTaskContainerColor);
+    text-align: justify;
+}
+
+.task-list > ul > li > button > span{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.index-buttons, .add-task-buttons, .edit-task-buttons {
+    position: fixed;
+    bottom: 0;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.index-buttons > button, .add-task-buttons > button, .edit-task-buttons > button {
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 49%;
+    height: 100%;
+    color: var(--textButtonColor);
+    font-size: var(--buttonTextSize);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-task-buttons > button {
+    width: 32%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    height: 6vh;
+    padding: 1vh 3vw;
+    border-radius: 20px;
+    display: flex;
+    margin: 1vh;
+    align-items: center;
+    background-color: var(--backgroundTaskContainerColor);
+}
+
+li > * {
+    margin-right: 1%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.description {
+    flex: 1;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+
+/* Css para el checked de todas las tareas */
+
+ /* Estilo para el checkbox "Seleccionar todas las tareas" cuando está marcado */
+#selectAll:checked ~ ul li input {
+    /* Aplicar estilos a los checkboxes de la lista cuando "Seleccionar todas las tareas" está marcado */
+    outline: 2px solid #4caf50; /* Cambiar el contorno a verde (puedes ajustar esto según tu diseño) */
+}
+
+/* Estilo para el bloque de "Seleccionar todas las tareas" */
+#selectAll:checked ~ ul::before, #deleteAll:checked ~ ul::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.2); /* Fondo sombreado (puedes ajustar el color y la opacidad) */
+    z-index: -1; /* Asegura que el fondo esté detrás de la lista de tareas */
+}
+
+/* Estilo para la etiqueta "Seleccionar todas las tareas" */
+.selectAllLabel, .deleteAllLabel  {
+    margin-left: 1%;
+    display: inline-block;
+}
+
+/* Alinea el nuevo checkbox a la derecha */
+.deleteAllLabel {
+    float: right;
+    margin-top: 5px;
+
+}
+
+#deleteAll:checked ~ ul li input{
+    outline: 2px solid #ff5757;
+}
+
+#deleteAll:checked ~ ul::before{
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+#deleteAll {
+    /*Queiro que aparezca el checkbox a la derecha del label*/
+    float: right;
+    margin-right: 3%;}
+
+
+
+
+/* ##### EDIT TASK ##### */
+
+.form {
+    height: 90vh;
+}
+
+.container-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.task > ul > li:nth-child(3) * {
+    border-radius: 10px;
+    border: none;
+}
+
+.task > ul > li:nth-child(3) textarea {
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 100%;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.task > ul > li:nth-child(3) {
+    height: 55vh;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#task-description {
+    overflow-y: auto;
+}
+
+/* ##### BUTTON COLORS ##### */
+/* BLUE BUTTON */
+.filtros > button:nth-child(3), .index-buttons > button:nth-child(1), .edit-task-buttons > button:nth-child(1) {
+    background-color: var(--backgroundSelectFilter);
+    color: var(--backgroundColor);
+}
+
+.filtros > button:nth-child(3):hover, .index-buttons > button:nth-child(1):hover, .edit-task-buttons > button:nth-child(1):hover {
+    background-color: var(--backgroundSelectFilterHover);
+}
+
+.filtros > button:nth-child(3):active, .index-buttons > button:nth-child(1):active, .edit-task-buttons > button:nth-child(1):active {
+    background-color: var(--backgroundSelectFileterActive);
+}
+
+
+/* RED BUTTON */
+.filtros > button:nth-child(2), .add-task-buttons > button:nth-child(1), .edit-task-buttons > button:nth-child(2) {
+    background-color: var(--backgroundCancelTask);
+    color: var(--backgroundColor);
+}
+
+.filtros > button:nth-child(2):hover, .add-task-buttons > button:nth-child(1):hover, .edit-task-buttons > button:nth-child(2):hover {
+    background-color: var(--backgroundCancelTaskHover);
+}
+
+.filtros > button:nth-child(2):active, .add-task-buttons > button:nth-child(1):active, .edit-task-buttons > button:nth-child(2):active {
+    background-color: var(--backgroundCancelTaskActive);
+}
+
+/* GREEN BUTTON */
+.filtros > button:nth-child(1), .index-buttons > button:nth-child(2), .add-task-buttons > button:nth-child(2), .edit-task-buttons > button:nth-child(3) {
+    background-color: var(--backgroundAddTask);
+    color: var(--backgroundColor);
+}
+
+.filtros > button:nth-child(1):hover, .index-buttons > button:nth-child(2):hover, .add-task-buttons > button:nth-child(2):hover, .edit-task-buttons > button:nth-child(3):hover {
+    background-color: var(--backgroundAddTaskHover);
+}
+
+.filtros > button:nth-child(1):active, .index-buttons > button:nth-child(2):active, .add-task-buttons > button:nth-child(2):active, .edit-task-buttons > button:nth-child(3):active {
+    background-color: var(--backgroundAddTaskActive);
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+}
+
+.filtros > button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 2vh;
+    border-radius: 20px;
+    transition: all 0.3s;
+    border: none;
+}
+
+.filtros > button:hover {
+    height: 40vh;
+}
+
+.filtros > button > * {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    margin-left: 5%;
+}

@@ -1,0 +1,18 @@
+ANALISTA
+
+Notas de trabajo de analista.
+Semana 2.
+
+En esta segunda semana nos hemos dedicado a solucionar los errores y a mejorar detalles de implementación de nuestra práctica. 
+El error que mas nos ha costado ha sido a la hora de mostrar todos los cócteles cuando clickabas sobre un ingrediente concreto.
+
+Alex: 5
+Gran trabajo de implementación en toda la interfaz sin ningún error y en los plazos estimados.
+Ayudó a sus compañeros en todo lo que necesitaron tanto a nivel de implementación como de comprensión de la tarea.
+
+Enrique: 5
+Al igual que Alex, realizó una gran labor en todo el trabajo, cumpliendo los plazos adecuadamente y con una calidad aceptable y ayudando al resto de compañeros con sus dificultades.
+
+Javier: 2
+No fue capaz de realizar su parte de la implementación a tiempo y necesitó de ayuda de sus compañeros de trabajo para poder entregar su parte sin errores.
+

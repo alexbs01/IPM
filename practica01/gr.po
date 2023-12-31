@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-16 09:38+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/view.py:54
+msgid "Cocktail"
+msgstr "Cocktail"
+
+#: src/view.py:56
+msgid "Ingrediente"
+msgstr "zutat"
+
+#: src/view.py:71
+msgid "Que quieres buscar?"
+msgstr "Was möchten Sie suchen?"
+
+#: src/view.py:75
+msgid "Vamos a probar cosas nuevas"
+msgstr "Lasst uns neue Dinge ausprobieren"
+
+#: src/view.py:80
+msgid "No alcoholic"
+msgstr "Alkoholfrei"
+
+#: src/view.py:201
+msgid "<big><b>Instrucciones</b></big>"
+msgstr "<big><b>Anweisungen</b></big>"
+
+#: src/view.py:206
+msgid ""
+"Yendo de arriba a abajo y de izquierda a derecha:\n"
+"            1- El Switch de selección de cócteles o ingredientes, permite "
+"indicar que se va a buscar\n"
+"            2- En el Buscador se debe escribir que buscar\n"
+"            3- El botón de la derecha del buscador, elegirá un cóctel "
+"aleatorio y lo mostrará para probar cosas nuevas\n"
+"            4- En el último Switch, por defecto se buscarán cócteles con "
+"alcohol y sin él, pero cuando se use por primera vez,\n"
+"                mostrará o sólo las alcohólicas o las no alcohólicas"
+msgstr "Von oben nach unten und von links nach rechts:\n"
+"            1- Mit dem Cocktail- oder Zutatenauswahlschalter können Sie angeben,"
+" wonach gesucht werden soll.\n"
+"            2- In der Suchmaschine müssen Sie eingeben, wonach gesucht werden soll\n"
+"            3- Über die Schaltfläche rechts in der Suchmaschine wird ein zufälliger"
+"Cocktail ausgewählt und angezeigt, damit Sie neue Dinge ausprobieren können\n"
+"            4- Auf der neuesten Switch wird standardmäßig nach alkoholischen und"
+" alkoholfreien Cocktails gesucht, bei der ersten Verwendung werden jedoch entweder nur"
+" alkoholische oder alkoholfreie Cocktails angezeigt"
+
+#: src/view.py:272
+#, python-brace-format
+msgid "<big><b>{name}</b></big>"
+msgstr "<big><b>{name}</b></big>"
+
+#: src/view.py:286
+msgid "<big><b>Preparation</b></big>"
+msgstr "<big><b>Vorbereitung</b></big>"
+
+#: src/view.py:306
+msgid "<big><b>Ingredientes</b></big>"
+msgstr "<big><b>Zutaten</b></big>"
+
+#: src/view.py:373
+msgid ""
+"<big><b>El cocktail no se encontró o no se pudo conectar al servidor</b></"
+"big>"
+msgstr "<big><b>Der Cocktail wurde nicht gefunden oder konnte keine Verbindung zum Server herstellen</b></"
+"big>"
+
+#: src/view.py:376
+msgid "Volver al buscador"
+msgstr "Zurück zur Suchmaschine"

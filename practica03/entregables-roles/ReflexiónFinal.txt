@@ -1,0 +1,42 @@
+a) Lo mejor de la práctica:
+
+La implementación exitosa de funcionalidades avanzadas con JavaScript.
+La mejora constante en la usabilidad y experiencia del usuario.
+La colaboración efectiva entre los miembros del equipo.
+El enfoque en la optimización del rendimiento del proyecto.
+
+b) Lo peor:
+
+Posiblemente, los posibles desafíos técnicos o bloqueos que se hayan presentado durante el desarrollo.
+La gestión del tiempo y la carga de trabajo, si se han experimentado dificultades en este aspecto.
+c) Mejor momento de cada semana durante el trabajo del equipo:
+
+Semana 1: Unificación de estilos CSS y mejoras en la estructura del proyecto.
+Semana 2: Ajustes semánticos y correcciones en el footer para mejorar la coherencia y accesibilidad.
+Semana 3: Implementación dinámica en CSS y avances significativos en JavaScript.
+Semana 4: Implementación avanzada de funcionalidades con JavaScript y optimización del rendimiento.
+d) Peor momento:
+
+Puede variar según las experiencias individuales, pero podría ser cualquier dificultad técnica, bloqueo creativo o desafío en la comunicación que haya afectado el progreso del equipo.
+e) Lo que has aprendido:
+
+Mejoras en el desarrollo y diseño web.
+Colaboración efectiva en un entorno de equipo.
+Implementación de funcionalidades avanzadas con JavaScript.
+Optimización del rendimiento del proyecto.
+f) Lo que necesitáis conservar como equipo para las próximas semanas:
+
+La colaboración y comunicación efectiva.
+El enfoque en la mejora continua y la innovación.
+La dedicación a la calidad del código y la usabilidad del proyecto.
+g) Lo que tenéis que mejorar como equipo para las próximas semanas:
+
+Gestión del tiempo y asignación de tareas.
+Abordar eficientemente cualquier desafío técnico que pueda surgir.
+Continuar fortaleciendo las habilidades individuales y compartiendo conocimientos.
+h) Relación con otros contenidos del curso y la titulación:
+
+Integración de conocimientos de HTML, CSS y JavaScript.
+Aplicación práctica de conceptos de desarrollo web.
+Desarrollo de habilidades de trabajo en equipo y colaboración.
+Enfoque en la optimización del rendimiento y la usabilidad del proyecto, aspectos cruciales en el desarrollo web moderno.

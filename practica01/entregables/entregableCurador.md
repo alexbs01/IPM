@@ -1,0 +1,21 @@
+- **Objetivos**
+    - **Primera entrega**
+        - Identificar casos de uso
+        - Diagrama UML escrito en Mermaid
+        - Buscar un patrón arquitectónico que sea independiente la vista del estado
+        - Implementar la aplicación siguiendo el diseño de la interfaz
+    - **Segunda entrega**
+        - Hacer la aplicación concurrente
+
+- **Material de ayuda**
+    - **Mermaid**
+        - [Primer vistazo a lo que es Mermaid](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/)
+        - [Mermaid online en tiempo real](https://mermaid.live/edit#pako:eNpVjstqw0AMRX9FaNVC_ANeFBq7zSbQQrPzZCFsOTMk80CWCcH2v3ccb1qtxD3nCk3Yxo6xxP4W760lUTjVJkCe96ay4gb1NJyhKN7mAyv4GPgxw_7lEGGwMSUXLq-bv18lqKbjqjGodeG6bKh69r8Cz1A3R0oa0_kvOd3jDB-N-7b5_H9ihXPrs-mp7KloSaAieSq4Q8_iyXX5_WlNDKplzwbLvHYkV4MmLNmjUePPI7RYqoy8wzF1pFw7ugj5LVx-AfLqVWg). Se puede utilizar para hacer el diagrama más fácilmente y luego pasarlo al repositorio.
+        - [Mermaid, pero un poco mejor explicado](https://www.freecodecamp.org/news/diagrams-as-code-with-mermaid-github-and-vs-code/), aparece muy bien explicado cómo hacer un diagrama de clases.
+    - **Python**
+        - [Tutorial de Python, documentación oficial](https://docs.python.org/es/3/tutorial/). Es el index de la documentación de python.org, como nunca usamos Python puede ser útil para saber como hacer determinadas estructuras de forma más fácil y rápida.
+    - **GTK 4**
+        - [Tutorial de GTK 4 con Python](https://github.com/Taiko2k/GTK4PythonTutorial). Tutorial bastante completo de GTK con Python
+        - [Patrones más comunes de arquitectura de software](https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b). El número 8 puede que sea el más indicado para la aplicación o una variación del mismo
+        - [Hacer una aplicación concurrente en Python con Gtk](https://community.listopro.com/programacion-concurrente-usando-multiples-threads-en-python/). Muestra con ejemplos cómo se hacen diversas cosas en Python para hacer una aplicación concurrente y paralela. Pero a nosostros nos interesa la primera
+        - [Pdf sobre la programación concurrente de Python](http://sagitario.itmorelia.edu.mx/~rogelio/python_programacion_concurrente.pdf). Está bastante bien explicado cómo hacer la concurrencia

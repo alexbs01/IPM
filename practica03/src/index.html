@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Agenda</title>
+        <link rel="stylesheet" href="./css/inicios.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Mi agenda</h1>
+        </header>
+
+        <main class="main-index" id="home">
+            <section class="task-list" aria-label="Lista de Tareas">
+                <ul id="list"></ul>
+            </section>
+            <section aria-label="Botones" class="index-buttons">
+                <button aria-label="Menu" onclick="menu()">&#x2261;</button>
+                <button aria-label="Añadir tarea" onclick="changePage('edit')">+</button>
+            </section>
+        </main>
+
+        <main class="edit-task-main" id="edit">
+            <section class="form">
+                <form id="form" class="task">
+                    <ul>
+                        <li class="campos-container" id="name-cont">
+                            <label for="task-name"><strong>Nombre de la tarea:</strong></label>
+                            <input type="text" id="name" name="task-name" autofocus required aria-label="Campo para insertar el nombre de la tarea" maxlength="20">
+                        </li>
+                        <li class="campos-container">
+                            <label for="task-date"><strong>Fecha límite:</strong></label><br/>
+                            <input type="date" id="date" name="task-date" aria-label="Campo para insertar la fecha de la tarea">
+                        </li>
+                        <li class="campos-container">
+                            <label for="task-description"><strong>Descripción de la tarea:</strong></label>
+                            <textarea id="description" name="description" aria-label="Campo para insertar la descripción de la tarea"></textarea>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+            <section aria-label="Botones" class="add-task-buttons">
+                <button aria-label="Cancelar" accesskey="C" onclick="cancelEdit()">&#x2717;</button>
+                <button aria-label="Añadir" type="submit" form="task-form" onclick="addTarea(document.getElementById('name').value, document.getElementById('date').value, document.getElementById('description').value)">&#10004;</button>
+            </section>
+        </main>
+        
+        <main class="see-task" id="task">
+            <section class="task">
+                <ul>   
+                    <li>
+                        <h2 id="titleTask"></h2>
+                    </li>
+                    <li id="task-dateTask">
+                        <h3>Fecha límite: </h3>
+                        <p id="dateTask"></p>
+                    </li>
+                    <li id="task-description">
+                        <h3>Descripción:</h3>
+                        <p id="descriptionTask"></p>
+                    </li>
+                </ul>
+            </section>
+            <section aria-label="Botones" class="edit-task-buttons">
+                <button id="back" onclick="{localStorage.removeItem('task'); changePage('home')}">&#8624;</button>
+                <button aria-label="Regresar" onclick="deleteTask()">&#128465;</button>
+                <button aria-label="Editar" onclick="editTask()">&#9998;</button>
+            </section>
+        </main>
+
+        <main id="menu">
+            <section title="Filtros" class="filtros">
+                <button aria-label="Ver tareas activas" onclick="filter('p')">
+                    <h2>Tareas activas</h2>
+                    <p title="número de tareas" id="n-ta">40</p>
+                </button>
+                <button aria-label="Ver todas las tareas" onclick="filter('all')">
+                    <h2>Tareas</h2>
+                    <p title="número de tareas" id="n-t">40</p>
+                </button>
+                <button aria-label="Ver tareas finalizadas" onclick="filter('f')">
+                    <h2>Tareas finalizadas</h2>
+                    <p title="número de tareas" id="n-tf">40</p>
+                </button>
+            </section>
+        </main>
+    </body>
+    <script>
+        var state = -1;
+        // Paginas
+        var pages = ['home', 'edit', 'task', 'menu'];
+
+        function changePage(page){
+            pages.forEach(function(pag){
+                if(pag == page){
+                    document.getElementById(pag).style.display = "block";
+                }else document.getElementById(pag).style.display = "none";
+            });
+        }
+
+        changePage('home');
+
+
+        // Lógica para generaR dinámicamente elementos de lista en función de la información proporcionada en el array arr y los agrega al contenedor de lista en el documento HTML
+        if(JSON.parse(localStorage.getItem("tasks")) == null) localStorage.setItem("tasks", JSON.stringify([]));
+        setList();
+
+        function setList(){
+            var arr = JSON.parse(localStorage.getItem("tasks"));
+            var list = document.getElementById('list');
+            list.innerHTML = "";
+
+            for(i = 0; i<=arr.length-1; i++){
+                var li = document.createElement('li')
+                if (state == -1 || state == arr[i][3]){
+                    li.innerHTML = '<button onclick="openTask('+i+')"><span class="title">'+arr[i][0]+'</span><span class="description">'+
+                        arr[i][2]+'</span></button><input type="checkbox" id="'+i+'">';
+                    list.appendChild(li);
+                    document.getElementById(i).checked = arr[i][3];
+                }
+            }
+        }
+
+        document.getElementById('list').addEventListener('change', function (){
+            var arr = JSON.parse(localStorage.getItem("tasks"));
+
+            for(i=0; i<=arr.length-1; i++){
+                if (state == arr[i][3]){
+                    arr[i][3] = document.getElementById(i).checked;
+                }else if (state == -1) arr[i][3] = document.getElementById(i).checked;
+            }
+            localStorage.setItem("tasks", JSON.stringify(arr));
+            setList();
+        });
+
+        // Añadir tarea
+        function addTarea(titulo, fecha, descripción){
+            var arr = JSON.parse(localStorage.getItem("tasks"));
+
+            if(titulo==""){
+                document.getElementById('name-cont').style.backgroundColor = "#ff5757";
+                return;
+            }else document.getElementById('name-cont').style.backgroundColor = "#bdbdbd"
+
+            id = localStorage.getItem("task");
+            if(id != null){
+                arr.splice(id, 1 , [titulo, descripción, fecha, false]);
+                localStorage.removeItem("task");
+            }else arr.push([titulo, descripción, fecha, false]);
+
+            localStorage.setItem("tasks", JSON.stringify(arr));
+            
+            changePage('home');
+
+            setList();
+
+            document.getElementById('form').reset();
+        }
+
+        //open task
+        function openTask(id){
+            localStorage.setItem("task", id);
+            var arr = JSON.parse(localStorage.getItem("tasks"));
+            document.getElementById('titleTask').innerText = arr[id][0];
+            if(arr[id][2]==""){
+                document.getElementById('task-dateTask').style.display = "none";
+            } else {
+                document.getElementById('task-dateTask').style.display = "flex";
+            }
+            document.getElementById('dateTask').innerText = arr[id][2];
+
+            if(arr[id][1]==""){
+                document.getElementById('task-description').style.display = "none";
+            } else {
+                document.getElementById('task-description').style.display = "flex";
+            }
+            document.getElementById('descriptionTask').innerText = arr[id][1];
+
+
+            changePage('task');
+        }
+
+        //edit task
+        function editTask(){
+            var id = localStorage.getItem("task");
+            var task = JSON.parse(localStorage.getItem("tasks"))[id];
+            document.getElementById("name").value = task[0];
+            document.getElementById("date").value = task[2];
+            document.getElementById("description").value = task[1];
+
+            changePage('edit');
+        }
+
+        function deleteTask(){
+            var id = localStorage.getItem("task");
+            var arr = JSON.parse(localStorage.getItem("tasks"));
+            var h = arr.slice(0,id);
+            
+            if(arr.length>id){
+                id++;
+                var t = arr.slice(id);
+                arr = h.concat(t);
+            }else arr = h;
+            localStorage.setItem("tasks", JSON.stringify(arr));
+            localStorage.removeItem("task");
+
+
+            setList();
+            changePage ('home');
+        }
+
+        function filter(type){
+            changePage('home');
+            switch(type){
+                case 'all':
+                    state = -1;
+                    break;
+                case 'p':
+                    state = 0;
+                    break;
+                case 'f':
+                    state = 1;
+                    break;
+            }
+            setList();
+        }
+
+        function menu(){
+            var arr = JSON.parse(localStorage.getItem("tasks"));
+            document.getElementById("n-t").innerHTML = arr.length.toString();
+            var finished = 0;
+            arr.forEach(element => {
+                if(element[3]){
+                    finished++;
+                }
+            });
+            document.getElementById("n-tf").innerHTML = finished.toString();
+            document.getElementById("n-ta").innerHTML = (arr.length - finished).toString();
+
+            changePage('menu')
+        }
+
+        function cancelEdit(){
+            localStorage.removeItem("task");
+            document.getElementById('form').reset();
+            changePage('home');
+        }
+
+    </script>
+</html>

@@ -1,0 +1,91 @@
+SEMANA 1  :
+
+Informe de Desempeño Pokémon: Analista
+
+* Administrador (Ash Ketchum):
+Análisis Rápido: ⚡️⚡️⚡️⚡️ -> 4/5
+Comentarios del Profesor Oak: "Ash Ketchum ha demostrado una habilidad excepcional para gestionar recursos y liderar el equipo. 
+Se enfoco principalmente en el formateo de los html para que se vean bonitos , así como el manejo de css de los mismos. 
+Implementación del html del filtro de Tareas(Completadas,Activas,Totales)."
+
+* Curador (Enfermera Joy):
+Análisis Rápido: 🌊🌊🌊🌊 -> 4/5
+Comentarios del Profesor Oak: "La dedicación de Enfermera Joy al cuidado y mantenimiento del equipo ha sido destacable.
+Su habilidad para mantener un ambiente saludable ha contribuido significativamente al bienestar general del equipo Pokémon.
+Se enfoco principalmente en mejorar semánticamente el código , así como la implentación del html de editar Tarea y su css y el html de ver una Tarea"
+
+* Analista (Profesor Oak):
+Análisis Rápido: 🔍🔍🔍🔍 -> 4/5
+Comentarios del Profesor Oak: "Como analista, he observado un enfoque minucioso y detallado en el trabajo. El Profesor Oak ha brindado insights valiosos para mejorar el proyecto. 
+Se recomienda seguir explorando nuevas perspectivas y tecnologías para enriquecer aún más la investigación.
+Se enfoco principalmente en el desarrollo del html del index junto con el css , también implemento que el html para cuando se seleccionan todas las tareas y finalmente implemento el html de
+añadir una tarea , que sirve tambien editarla tambien"
+
+Observaciones Generales del Profesor Oak: 🌟🔍🎉
+"El equipo Pokémon ha mostrado un desempeño impresionante en el proyecto. La combinación de habilidades distintivas de cada miembro ha llevado a resultados sólidos. 
+Sin embargo, se alienta a todos a seguir explorando y mejorando, manteniendo siempre la chispa de la curiosidad y la innovación en sus roles."
+
+
+SEMANA 2 : 
+
+Informe de Desempeño Pokémon: Analista
+
+Administrador (Ash Ketchum):
+Análisis Rápido: ⚡️⚡️⚡️⚡️ -> 4/5
+Comentarios del Profesor Oak: En la segunda semana, Ash Ketchum ha liderado eficazmente la unificación de todos los archivos CSS en uno solo, simplificando así la estructura y mejorando la eficiencia del proyecto. También ha trabajado en la optimización de los estilos, asegurando una apariencia consistente en todas las páginas. La implementación del CSS unificado ha mejorado significativamente la carga y rendimiento del sitio.
+
+Curador (Enfermera Joy):
+Análisis Rápido: 🌊🌊🌊🌊 -> 4/5
+Comentarios del Profesor Oak: En la segunda semana, Enfermera Joy ha continuado su labor excepcional, realizando ajustes semánticos en los archivos HTML. Además, ha dedicado tiempo a corregir detalles en el footer de las páginas, mejorando la coherencia y accesibilidad del contenido. Los cambios realizados han contribuido a una experiencia de usuario más intuitiva y agradable.
+
+Analista (Profesor Oak):
+Análisis Rápido: 🔍🔍🔍🔍 -> 4/5
+Comentarios del Profesor Oak: Durante la segunda semana, como analista, me he centrado en hacer que los archivos HTML sean completamente responsive, asegurando que el contenido se adapte adecuadamente al ancho de las pantallas de móviles, tabletas y navegadores web. Además, he implementado la funcionalidad crucial de borrar las tareas seleccionadas, mejorando la usabilidad del sistema y proporcionando a los usuarios una forma eficiente de gestionar sus tareas.
+
+Observaciones Generales del Profesor Oak: 🌟🔍🎉
+"El equipo Pokémon continúa destacando en su desempeño. La colaboración entre los miembros ha llevado a mejoras significativas en la estética, semántica y funcionalidad del proyecto. Sigamos trabajando juntos para mantener y mejorar estos estándares de excelencia. ¡Gran trabajo, equipo!"
+
+
+SEMANA 3 : 
+
+Informe de Desempeño Pokémon: Analista
+
+
+Administrador (Ash Ketchum):
+
+Análisis Rápido: ⚡️⚡️⚡️⚡️⚡️ -> 5/5
+Comentarios del Profesor Oak: En la tercera semana, Ash Ketchum ha demostrado su habilidad para aplicar mejoras dinámicas en el CSS, mejorando la estética y la interactividad del proyecto. Sus ajustes han llevado a una iteración más suave y agradable con los campos del HTML, incluyendo los botones. Esta mejora visual contribuye significativamente a la experiencia del usuario, haciéndola más atractiva y funcional.
+Curador (Enfermera Joy):
+
+Análisis Rápido: 🌊🌊🌊🌊🌊 -> 5/5
+Comentarios del Profesor Oak: Durante la tercera semana, Enfermera Joy ha comenzado la implementación de JavaScript en diversas funcionalidades clave, como añadir tareas, eliminarlas y seleccionar tareas. Su enfoque en la interactividad del proyecto agrega una capa adicional de dinamismo y utilidad. Este paso hacia la programación del lado del cliente mejora la experiencia general del usuario y sienta las bases para características más avanzadas.
+Analista (Profesor Oak):
+
+Análisis Rápido: 🔍🔍🔍🔍 -> 4/5
+Comentarios del Profesor Oak: Como analista, en la tercera semana he llevado a cabo un análisis detallado del trabajo de mis compañeros. Me he centrado en validar el correcto uso del HTML y CSS, asegurándome de que cumplan con las mejores prácticas y estándares. Este proceso de revisión es crucial para mantener la coherencia y la calidad del código base. Además, he proporcionado recomendaciones para posibles mejoras y optimizaciones.
+Observaciones Generales del Profesor Oak: 🌟🔍🎉
+"El equipo Pokémon sigue destacando en su progreso. La incorporación de mejoras visuales dinámicas, la implementación de JavaScript y el análisis detallado del código son pasos cruciales hacia un proyecto más completo y robusto. Continuemos colaborando y refinando nuestros enfoques para alcanzar aún mayores estándares de excelencia. ¡Bien hecho, equipo!"
+
+SEMANA 4 :
+  Administrador (Ash Ketchum):
+
+Análisis Rápido: ⚡️⚡️⚡️⚡️⚡️ -> 5/5
+Comentarios del Profesor Oak: En la cuarta semana, Ash Ketchum ha llevado a cabo una mejora significativa en la usabilidad del proyecto al implementar funcionalidades avanzadas con JavaScript. Su enfoque en la validación de formularios y la gestión dinámica de datos eleva la interactividad y eficiencia del sistema. Además, ha realizado ajustes finos en la presentación visual, contribuyendo a una experiencia de usuario más pulida y atractiva.
+
+Curador (Enfermera Joy):
+
+Análisis Rápido: 🌊🌊🌊🌊🌊 -> 5/5
+Comentarios del Profesor Oak: Durante la cuarta semana, Enfermera Joy ha continuado su labor excepcional en el desarrollo de funcionalidades clave mediante JavaScript. Ha mejorado la capacidad del usuario para editar tareas existentes y ha implementado la capacidad de marcar tareas como completadas. Estos avances consolidan la interactividad del proyecto y proporcionan a los usuarios un control más completo sobre sus tareas.
+
+Analista (Profesor Oak):
+
+Análisis Rápido: 🔍🔍🔍🔍 🔍-> 5/5
+Comentarios del Profesor Oak: Como analista, en la cuarta semana he centrado mi atención en la optimización del rendimiento del proyecto. He realizado ajustes en el código para garantizar una carga rápida y eficiente, especialmente al manejar grandes conjuntos de datos. Además, he proporcionado sugerencias para mejorar la modularidad del código, facilitando futuras actualizaciones y expansiones.
+
+Observaciones Generales del Profesor Oak: 🌟🔍🎉
+"El equipo Pokémon ha alcanzado nuevos logros en la cuarta semana, destacando la implementación exitosa de funcionalidades avanzadas con JavaScript y la optimización del rendimiento del proyecto. La colaboración continua y el enfoque en la mejora constante son clave para mantener nuestro estándar de excelencia. ¡Felicitaciones, equipo!"
+
+
+
+
+

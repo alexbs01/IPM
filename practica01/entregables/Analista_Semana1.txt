@@ -1,0 +1,16 @@
+ANALISTA
+
+Notas de trabajo de analista.
+Semana 1.
+
+Se realizó la puesta en común de las prácticas individuales realizadas para crear un conjunto único de casos de uso, eligiendo uno de los tres diseños para mejorarlo y adecuarlo a los requisitos de la práctica. También se trabajo en los diagramas del diseño tanto de la parte estática como de la parte dinámica y se comenzo con la implementación de la aplicación utilizando el lenguaje de programación Python y la librería gráfica GTK.
+
+Enrique: 5
+Proporcionó el diseño que se tomó como punto de partida para la realización de esta práctica.
+Realizó perfectamente a tiempo y sin errores su parte de implementacion del diseño de la interface y del diseño software que se decidieron anteriormente entre todos los miembros del grupo.
+
+Álex: 5
+Realizó su parte del diseño e implementación de una manera excelente, sin errores y cumpliendo perfectamente con los plazos establecidos.
+
+Javier: 3 
+Realizó de manera correcta su parte del diseño software, a tiempo sin grandes errores
